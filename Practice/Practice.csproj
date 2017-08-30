@@ -252,6 +252,14 @@
     <Compile Include="Migrations\201708302057178_AddedBirthdate.Designer.cs">
       <DependentUpon>201708302057178_AddedBirthdate.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201708302149093_AddedWigetTypes.cs" />
+    <Compile Include="Migrations\201708302149093_AddedWigetTypes.Designer.cs">
+      <DependentUpon>201708302149093_AddedWigetTypes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201708302153052_PopulatedWidgetTypes.cs" />
+    <Compile Include="Migrations\201708302153052_PopulatedWidgetTypes.Designer.cs">
+      <DependentUpon>201708302153052_PopulatedWidgetTypes.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
@@ -260,6 +268,7 @@
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\MembershipType.cs" />
     <Compile Include="Models\Widget.cs" />
+    <Compile Include="Models\WidgetType.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
     <Compile Include="ViewModels\RandomWidgetViewModel.cs" />
@@ -378,6 +387,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201708302057178_AddedBirthdate.resx">
       <DependentUpon>201708302057178_AddedBirthdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201708302149093_AddedWigetTypes.resx">
+      <DependentUpon>201708302149093_AddedWigetTypes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201708302153052_PopulatedWidgetTypes.resx">
+      <DependentUpon>201708302153052_PopulatedWidgetTypes.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

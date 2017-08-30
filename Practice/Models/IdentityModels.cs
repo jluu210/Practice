@@ -22,6 +22,7 @@ namespace Practice.Models
     {
         public DbSet<Customer> Customers { get; set; } //adds customers to database
         public DbSet<Widget> Wigets { get; set; } //adds all our widgets to database
+        public DbSet<WidgetType> WidgetTypes { get; set; } //adds all our widget types to database
         /// //////////////////////////////////////////////////////////////////////////
 
         public ApplicationDbContext()
