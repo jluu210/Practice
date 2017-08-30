@@ -264,10 +264,19 @@
     <Compile Include="Migrations\201708302209313_PopulatedWidgets.Designer.cs">
       <DependentUpon>201708302209313_PopulatedWidgets.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201708302249155_ChangedDbset.cs" />
+    <Compile Include="Migrations\201708302249155_ChangedDbset.Designer.cs">
+      <DependentUpon>201708302249155_ChangedDbset.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201708302314229_AddedMilitaryWidget.cs" />
+    <Compile Include="Migrations\201708302314229_AddedMilitaryWidget.Designer.cs">
+      <DependentUpon>201708302314229_AddedMilitaryWidget.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
     <Compile Include="Models\Doodad.cs" />
+    <Compile Include="Models\Gadget.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\MembershipType.cs" />
@@ -340,6 +349,8 @@
     <Content Include="Views\Shared\_NavBar.cshtml" />
     <Content Include="Views\Customer\Index.cshtml" />
     <Content Include="Views\Customer\Detail.cshtml" />
+    <Content Include="Views\Widget\Index.cshtml" />
+    <Content Include="Views\Widget\Detail.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -400,6 +411,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201708302209313_PopulatedWidgets.resx">
       <DependentUpon>201708302209313_PopulatedWidgets.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201708302249155_ChangedDbset.resx">
+      <DependentUpon>201708302249155_ChangedDbset.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201708302314229_AddedMilitaryWidget.resx">
+      <DependentUpon>201708302314229_AddedMilitaryWidget.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

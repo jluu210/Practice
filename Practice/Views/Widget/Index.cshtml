@@ -1,0 +1,36 @@
+﻿@model IEnumerable<Practice.Models.Widget>
+
+
+@{
+    ViewBag.Title = "Widgets";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Widgets</h2>
+@if (!Model.Any())
+{
+    <p> We don't have any Widgets yet.</p>
+}
+else
+{
+    <table class="table table-bordered table-hover">
+        <thead>
+            <tr>
+                <th>Widgets</th>
+                <th>Type of Widget</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var widget in Model)
+            {
+
+                <tr>
+
+                    <td>@Html.ActionLink(widget.Name, "Detail", "Widget", new { id = widget.Id }, null)</td>
+                    <td>@widget.WidgetType.TypeOfWidget</td>
+                </tr>
+
+            }
+        </tbody>
+    </table>
+}
