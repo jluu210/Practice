@@ -260,6 +260,10 @@
     <Compile Include="Migrations\201708302153052_PopulatedWidgetTypes.Designer.cs">
       <DependentUpon>201708302153052_PopulatedWidgetTypes.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201708302209313_PopulatedWidgets.cs" />
+    <Compile Include="Migrations\201708302209313_PopulatedWidgets.Designer.cs">
+      <DependentUpon>201708302209313_PopulatedWidgets.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
@@ -393,6 +397,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201708302153052_PopulatedWidgetTypes.resx">
       <DependentUpon>201708302153052_PopulatedWidgetTypes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201708302209313_PopulatedWidgets.resx">
+      <DependentUpon>201708302209313_PopulatedWidgets.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
