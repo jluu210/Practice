@@ -240,6 +240,18 @@
     <Compile Include="Migrations\201708301720596_ChangedMembershipType1.Designer.cs">
       <DependentUpon>201708301720596_ChangedMembershipType1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201708302019440_AddedDiscountRates.cs" />
+    <Compile Include="Migrations\201708302019440_AddedDiscountRates.Designer.cs">
+      <DependentUpon>201708302019440_AddedDiscountRates.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201708302021235_UpdateDatabaseDiscountRate.cs" />
+    <Compile Include="Migrations\201708302021235_UpdateDatabaseDiscountRate.Designer.cs">
+      <DependentUpon>201708302021235_UpdateDatabaseDiscountRate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201708302057178_AddedBirthdate.cs" />
+    <Compile Include="Migrations\201708302057178_AddedBirthdate.Designer.cs">
+      <DependentUpon>201708302057178_AddedBirthdate.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
@@ -357,6 +369,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201708301720596_ChangedMembershipType1.resx">
       <DependentUpon>201708301720596_ChangedMembershipType1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201708302019440_AddedDiscountRates.resx">
+      <DependentUpon>201708302019440_AddedDiscountRates.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201708302021235_UpdateDatabaseDiscountRate.resx">
+      <DependentUpon>201708302021235_UpdateDatabaseDiscountRate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201708302057178_AddedBirthdate.resx">
+      <DependentUpon>201708302057178_AddedBirthdate.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
