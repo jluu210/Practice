@@ -8,7 +8,7 @@ namespace Practice.Models
     public class MembershipType
     {
         public byte Id { get; set; }
-        public byte SignUpFee { get; set; }
+        public short SignUpFee { get; set; }
         public byte DurationInMonths { get; set; }
         public byte TypeOfMembership { get; set; }
     }

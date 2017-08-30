@@ -200,6 +200,7 @@
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\CustomerController.cs" />
     <Compile Include="Controllers\DoodadController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
@@ -226,6 +227,14 @@
     <Compile Include="Migrations\201708300443441_ChangedMembershipType.cs" />
     <Compile Include="Migrations\201708300443441_ChangedMembershipType.Designer.cs">
       <DependentUpon>201708300443441_ChangedMembershipType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201708301134093_ChangedVariableType.cs" />
+    <Compile Include="Migrations\201708301134093_ChangedVariableType.Designer.cs">
+      <DependentUpon>201708301134093_ChangedVariableType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201708301144410_AppliedAnotationsToCustomerName.cs" />
+    <Compile Include="Migrations\201708301144410_AppliedAnotationsToCustomerName.Designer.cs">
+      <DependentUpon>201708301144410_AppliedAnotationsToCustomerName.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -300,7 +309,9 @@
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\Widget\Random.cshtml" />
     <Content Include="Views\Shared\_NavBar.cshtml" />
-    <Content Include="Views\Home\Customers.cshtml" />
+    <Content Include="Views\Customer\Customers.cshtml" />
+    <Content Include="Views\Customer\Index.cshtml" />
+    <Content Include="Views\Customer\Detail.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -334,6 +345,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201708300443441_ChangedMembershipType.resx">
       <DependentUpon>201708300443441_ChangedMembershipType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201708301134093_ChangedVariableType.resx">
+      <DependentUpon>201708301134093_ChangedVariableType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201708301144410_AppliedAnotationsToCustomerName.resx">
+      <DependentUpon>201708301144410_AppliedAnotationsToCustomerName.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

@@ -22,7 +22,7 @@ namespace Practice.Controllers
             return View();
         }
 
-        public ActionResult Customers()
+        /*public ActionResult Customers()
         {
             Widget widget = new Widget
             {
@@ -44,7 +44,7 @@ namespace Practice.Controllers
 
 
             return View(viewModel);
-        }
+        }*/
 
         public ActionResult Contact()
         {

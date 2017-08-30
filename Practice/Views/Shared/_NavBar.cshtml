@@ -16,7 +16,8 @@
 
                     @*returns a link with name="Widgets" and a link = "widget/random"*@
                     @*<li>@Html.ActionLink("Widgets", "Random", "Widget")</li>*@
-                    <li>@Html.ActionLink("Customers", "Customers", "Home")</li>
+                    @*<li>@Html.ActionLink("Customers", "Customers", "Home")</li>*@
+                    <li>@Html.ActionLink("Customers", "Index", "Customer")</li>
                     <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
                 </ul>
                 @Html.Partial("_LoginPartial")
