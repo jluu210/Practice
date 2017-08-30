@@ -20,6 +20,8 @@ namespace Practice.Models
 
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
+        public DbSet<Customer> Customers { get; set; } //adds customers to database
+        public DbSet<Widget> Wigets { get; set; } //adds all our widgets to database
         public ApplicationDbContext()
             : base("DefaultConnection", throwIfV1Schema: false)
         {

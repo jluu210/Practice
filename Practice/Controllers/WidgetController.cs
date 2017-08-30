@@ -8,21 +8,11 @@ using Practice.ViewModels;
 
 namespace Practice.Controllers
 {
-    public class HomeController : Controller
+    public class WidgetController : Controller
     {
-        public ActionResult Index()
-        {
-            return View();
-        }
-
-        public ActionResult About()
-        {
-            ViewBag.Message = "Hello. This is my first ASP.Net Project";
-
-            return View();
-        }
-
-        public ActionResult Customers()
+        // GET: Widget/Random
+        [Route("widgets/random/")]
+        public ActionResult Random()
         {
             Widget widget = new Widget
             {
@@ -42,15 +32,25 @@ namespace Practice.Controllers
                 Customers = customers
             };
 
-
+            
             return View(viewModel);
         }
 
-        public ActionResult Contact()
+        [Route("widgets/index/")]
+        public ActionResult Index (int? pageIndex, string sortBy)
         {
-            ViewBag.Message = "Your contact page.";
+            if (!pageIndex.HasValue)
+                pageIndex = 1;
 
-            return View();
+            if (String.IsNullOrWhiteSpace(sortBy))
+                sortBy = "Name";
+            return Content(String.Format("pageIndex={0}&sortBy={1}",pageIndex, sortBy));
+        }
+
+        [Route("widgets/byPrice/")]
+        public ActionResult WidgetsByPrice(float amount)
+        {
+            return HttpNotFound();
         }
     }
 }

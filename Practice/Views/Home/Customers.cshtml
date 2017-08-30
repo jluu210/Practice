@@ -1,0 +1,34 @@
+﻿
+@model Practice.ViewModels.RandomWidgetViewModel
+@{
+    ViewBag.Title = "Customers";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+
+
+}
+<h2>Customers of who have bought @Model.Widget.Name</h2>
+
+
+
+@if (Model.Customers.Count == 0)
+{
+    <text> No one has bought this widget before. </text>
+}
+else
+{
+    <ul>
+        @foreach (var customer in Model.Customers)
+        {
+
+
+            <li>@customer.Name</li>
+
+        }
+    </ul>
+
+}
+
+<table class=“table table-bordered table-hover”>
+
+    This is a tabl.
+</table>
