@@ -211,12 +211,21 @@
     <Compile Include="Migrations\201708300237121_InitialModel.Designer.cs">
       <DependentUpon>201708300237121_InitialModel.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201708300326469_AddSubScribedToCustomer.cs" />
+    <Compile Include="Migrations\201708300326469_AddSubScribedToCustomer.Designer.cs">
+      <DependentUpon>201708300326469_AddSubScribedToCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201708300337086_AddMembershipType.cs" />
+    <Compile Include="Migrations\201708300337086_AddMembershipType.Designer.cs">
+      <DependentUpon>201708300337086_AddMembershipType.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
     <Compile Include="Models\Doodad.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Models\MembershipType.cs" />
     <Compile Include="Models\Widget.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
@@ -305,6 +314,12 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201708300237121_InitialModel.resx">
       <DependentUpon>201708300237121_InitialModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201708300326469_AddSubScribedToCustomer.resx">
+      <DependentUpon>201708300326469_AddSubScribedToCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201708300337086_AddMembershipType.resx">
+      <DependentUpon>201708300337086_AddMembershipType.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
