@@ -22,30 +22,6 @@ namespace Practice.Controllers
             return View();
         }
 
-        /*public ActionResult Customers()
-        {
-            Widget widget = new Widget
-            {
-                Name = "widget 1"
-            };
-
-            var customers = new List<Customer>
-            {
-                new Customer { Name = "Mark Smith"},
-                new Customer { Name = "John Daniels"},
-                new Customer { Name = "Martha Lyster"}
-            };
-
-            var viewModel = new RandomWidgetViewModel
-            {
-                Widget = widget,
-                Customers = customers
-            };
-
-
-            return View(viewModel);
-        }*/
-
         public ActionResult Contact()
         {
             ViewBag.Message = "Your contact page.";
