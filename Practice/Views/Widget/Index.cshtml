@@ -7,6 +7,9 @@
 }
 
 <h2>Widgets</h2>
+<form>
+<p>@Html.ActionLink("New Widget", "New", "widget", null, new { @class = "btn btn-primary" })</p>
+</form>
 @if (!Model.Any())
 {
     <p> We don't have any Widgets yet.</p>

@@ -16,6 +16,7 @@ namespace Practice.Models
 
         public bool IsSubScribed { get; set; }
 
+        [Required]
         public MembershipType MembershipType { get; set; }
 
         [Display(Name = "Membership Type")]

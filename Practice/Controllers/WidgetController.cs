@@ -24,7 +24,7 @@ namespace Practice.Controllers
         }
 
         // GET: Widget/Random
-        [Route("widgets/random/")]
+        [Route("widget/random/")]
         public ActionResult Random()
         {
             return HttpNotFound();
@@ -45,10 +45,49 @@ namespace Practice.Controllers
             if (widget == null)
                 return HttpNotFound();
 
-            return View(widget);
+            var viewModel = new WidgetFormViewModel
+            {
+                Widget = widget,
+                WidgetTypes = _context.WidgetTypes.ToList()
+            };
+
+
+            return View("WidgetForm",viewModel);
         }
 
-        [Route("widgets/byPrice/")]
+        //[Route("widget/new/")]
+        public ActionResult New()
+        {
+            var widgetTypes = _context.WidgetTypes.ToList();
+            var viewModel = new WidgetFormViewModel
+            {
+                WidgetTypes = widgetTypes
+            };
+            return View("WidgetForm", viewModel);
+        }
+
+        [HttpPost]
+        public ActionResult Save(Widget widget)
+        {
+            if(widget.Id == 0)
+            {
+                _context.Widgets.Add(widget);
+            }
+            else
+            {
+                var widgetInDb = _context.Widgets.Single(w => w.Id == widget.Id);
+                widgetInDb.Name = widget.Name;
+                widgetInDb.NumberInStock = widget.NumberInStock;
+                widgetInDb.WidgetTypeId = widget.WidgetTypeId;
+            }
+            _context.SaveChanges();
+
+            return RedirectToAction("Index","Widget");
+        }
+
+
+
+        [Route("widget/byPrice/")]
         public ActionResult WidgetsByPrice(float amount)
         {
             return HttpNotFound();

@@ -272,6 +272,14 @@
     <Compile Include="Migrations\201708302314229_AddedMilitaryWidget.Designer.cs">
       <DependentUpon>201708302314229_AddedMilitaryWidget.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201708311549178_AddedWidgetTypeId.cs" />
+    <Compile Include="Migrations\201708311549178_AddedWidgetTypeId.Designer.cs">
+      <DependentUpon>201708311549178_AddedWidgetTypeId.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201708311917249_AddedRequiredFields.cs" />
+    <Compile Include="Migrations\201708311917249_AddedRequiredFields.Designer.cs">
+      <DependentUpon>201708311917249_AddedRequiredFields.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
@@ -286,6 +294,7 @@
     <Compile Include="Startup.cs" />
     <Compile Include="ViewModels\CustomerFormViewModel.cs" />
     <Compile Include="ViewModels\RandomWidgetViewModel.cs" />
+    <Compile Include="ViewModels\WidgetFormViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap-jornal.css" />
@@ -353,6 +362,7 @@
     <Content Include="Views\Widget\Index.cshtml" />
     <Content Include="Views\Widget\Detail.cshtml" />
     <Content Include="Views\Customer\CustomerForm.cshtml" />
+    <Content Include="Views\Widget\WidgetForm.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -419,6 +429,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201708302314229_AddedMilitaryWidget.resx">
       <DependentUpon>201708302314229_AddedMilitaryWidget.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201708311549178_AddedWidgetTypeId.resx">
+      <DependentUpon>201708311549178_AddedWidgetTypeId.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201708311917249_AddedRequiredFields.resx">
+      <DependentUpon>201708311917249_AddedRequiredFields.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

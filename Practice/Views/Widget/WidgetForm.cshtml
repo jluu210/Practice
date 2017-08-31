@@ -1,0 +1,34 @@
+﻿
+@model Practice.ViewModels.WidgetFormViewModel
+
+@{
+    ViewBag.Title = "WidgetForm";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@*{id, name, WidgetType, DateTime, NumberInStock}*@
+    <h2>@Model.Title</h2>
+@using (Html.BeginForm("Save", "Widget"))
+{
+    <div class="form-group">
+        @Html.LabelFor(w => w.Widget.Name)
+        @Html.TextBoxFor(w => w.Widget.Name, new { @class = "form-control" })
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(w => w.Widget.DateAddedToStock)
+        @Html.TextBoxFor(w => w.Widget.DateAddedToStock,"{0:d MMM yyyy}", new { @class = "form-control" })
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(w => w.Widget.NumberInStock)
+        @Html.TextBoxFor(w => w.Widget.NumberInStock, new { @class = "form-control" })
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(w => w.WidgetTypes)
+        @Html.DropDownListFor(w => w.Widget.WidgetTypeId,
+            new SelectList(Model.WidgetTypes, "Id", "TypeOfWidget"),
+            "Select Widget Type", new { @class = "form-control" })
+    </div>
+    @Html.HiddenFor(w => w.Widget.Id)
+    <button type="submit" class="btn btn-primary">Save</button>
+
+}
