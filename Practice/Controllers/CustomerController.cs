@@ -1,4 +1,5 @@
 ﻿using Practice.Models;
+using Practice.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -43,6 +44,17 @@ namespace Practice.Controllers
 
             return View(customer);
 
+        }
+
+        public ActionResult New()
+        {
+            var membershipTypes = _context.MembershipTypes.ToList();
+            var viewModel = new NewCustomerViewModel
+            {
+                MembershipTypes = membershipTypes
+            };
+
+            return View(viewModel);
         }
 
 
