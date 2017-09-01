@@ -14,13 +14,13 @@ namespace Practice.Models
 
             bool isMember = false;
 
-            if (customer.MembershipTypeId > 1)
+            if (customer.MembershipTypeId > 1) // tells if the customer is member
                 isMember = true;
 
-            if (!isMember)
+            if (!isMember) // if they are not a member then we don't need a birthdate
                 return ValidationResult.Success;
 
-            if (customer.Birthdate == null)
+            if (customer.Birthdate == null)  
                 return new ValidationResult("Birthdate is required");
 
             var age = DateTime.Today.Year - customer.Birthdate.Value.Year;

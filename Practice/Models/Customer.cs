@@ -26,5 +26,6 @@ namespace Practice.Models
         [IsCustomerOver18]
         public DateTime? Birthdate { get; set; }
 
+
     }
 }

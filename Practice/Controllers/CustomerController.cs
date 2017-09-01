@@ -61,6 +61,7 @@ namespace Practice.Controllers
         
         [HttpPost]
         [Route("customer/save")]
+        [ValidateAntiForgeryToken]
         public ActionResult Save(Customer customer)
         {
             if (!ModelState.IsValid)
