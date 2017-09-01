@@ -12,5 +12,6 @@ namespace Practice.Models
         public byte DurationInMonths { get; set; }
         public string TypeOfMembership { get; set; }
         public byte DiscountRate { get; set; }
+
     }
 }

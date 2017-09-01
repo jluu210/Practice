@@ -280,12 +280,21 @@
     <Compile Include="Migrations\201708311917249_AddedRequiredFields.Designer.cs">
       <DependentUpon>201708311917249_AddedRequiredFields.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201708312130244_EditedCustomers.cs" />
+    <Compile Include="Migrations\201708312130244_EditedCustomers.Designer.cs">
+      <DependentUpon>201708312130244_EditedCustomers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201708312152023_EditedCustomersMemershipID.cs" />
+    <Compile Include="Migrations\201708312152023_EditedCustomersMemershipID.Designer.cs">
+      <DependentUpon>201708312152023_EditedCustomersMemershipID.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
     <Compile Include="Models\Doodad.cs" />
     <Compile Include="Models\Gadget.cs" />
     <Compile Include="Models\IdentityModels.cs" />
+    <Compile Include="Models\IsCustomerOver18.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\MembershipType.cs" />
     <Compile Include="Models\Widget.cs" />
@@ -435,6 +444,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201708311917249_AddedRequiredFields.resx">
       <DependentUpon>201708311917249_AddedRequiredFields.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201708312130244_EditedCustomers.resx">
+      <DependentUpon>201708312130244_EditedCustomers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201708312152023_EditedCustomersMemershipID.resx">
+      <DependentUpon>201708312152023_EditedCustomersMemershipID.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

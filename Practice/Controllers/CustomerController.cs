@@ -24,6 +24,7 @@ namespace Practice.Controllers
         }
 
         // GET: customer/index
+        [Route("customer/index")]
         public ActionResult Index()
         {
             //var customers = GetCustomers();
@@ -57,8 +58,9 @@ namespace Practice.Controllers
             return View("CustomerForm",viewModel);
         }
 
-        //[Route("customer/save/")]
+        
         [HttpPost]
+        [Route("customer/save")]
         public ActionResult Save(Customer customer)
         {
             if (!ModelState.IsValid)
@@ -85,10 +87,12 @@ namespace Practice.Controllers
             }
             
             _context.SaveChanges();
-            return RedirectToAction("Index", "Customer");
+
+            return RedirectToAction("Index","Customer");
         }
 
 
+        [Route("customer/edit/")]
         public ActionResult Edit(int id)
         {
             var customer = _context.Customers.SingleOrDefault(c => c.Id == id);
